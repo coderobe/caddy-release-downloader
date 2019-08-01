@@ -1,6 +1,6 @@
 language: go
 go:
-- '1.11'
+- '1.27.7'
 script: go run download-caddy.go $TRAVIS_TAG
 deploy:
   provider: releases
@@ -10,6 +10,6 @@ deploy:
   file_glob: true
   skip_cleanup: true
   on:
-    repo: klingtnet/caddy-release-downloader
+    repo: coderobe/caddy-release-downloader
     tags: true
     all_branches: true
