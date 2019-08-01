@@ -1,5 +1,5 @@
 language: go
-script: go run download-caddy.go $TRAVIS_TAG
+script: go run download-caddy.go 1.0.1
 deploy:
   provider: releases
   api_key:
