@@ -99,7 +99,7 @@ func main() {
 
 	failed := false
 	ver := os.Args[1]
-	archs := []string{"386", "amd64", "arm7", "arm6"}
+	archs := []string{"amd64"}
 	rootURL := "https://caddyserver.com/download/linux"
 	features := filterFeatures(getFeatures())
 	featureList := url.QueryEscape(strings.Join(features, ","))
