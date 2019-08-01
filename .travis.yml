@@ -1,6 +1,4 @@
 language: go
-go:
-- '1.27.7'
 script: go run download-caddy.go $TRAVIS_TAG
 deploy:
   provider: releases
